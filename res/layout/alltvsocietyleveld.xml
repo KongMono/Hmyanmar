@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/alltvsocietyleveld_headerframe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/header_text" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/alltvsocietyleveld_midframe"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center" >
+
+                <com.google.android.youtube.player.YouTubePlayerView
+                    android:id="@+id/alltvsocietyleveld_youtube"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/alltvsocietyleveld_imageframe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/alltvsocietyleveld_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/htv_placeholder"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/alltvsocietyleveld_imageplay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_play" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/alltvsocietyleveld_videoframe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    android:visibility="gone" >
+
+                    <VideoView
+                        android:id="@+id/alltvsocietyleveld_videoview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                    <RelativeLayout
+                        android:id="@+id/alltvsocietyleveld_playpauseframe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/gray_0"
+                        android:visibility="invisible" >
+
+                        <ImageView
+                            android:id="@+id/alltvsocietyleveld_playpausebutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/play" />
+
+                        <ImageView
+                            android:id="@+id/alltvsocietyleveld_fullscreenbutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/fullscreen" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/alltvsocietyleveld_loadingvideoview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@color/gray_3"
+                        android:orientation="horizontal"
+                        android:padding="7dp"
+                        android:visibility="visible" >
+
+                        <ProgressBar
+                            style="?android:attr/progressBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Loading.."
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/alltvsocietyleveld_buttonframe"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/gray_3" >
+
+                <LinearLayout
+                    android:id="@+id/alltvsocietyleveld_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:id="@+id/alltvsocietyleveld_viewtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dp"
+                            android:text="view"
+                            android:textColor="@color/orange"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/alltvsocietyleveld_viewnum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@id/alltvsocietyleveld_viewtext"
+                            android:text=""
+                            android:textColor="@color/gray_2"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:id="@+id/alltvsocietyleveld_sharebutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="3dp"
+                            android:background="@drawable/btn_share"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/alltvsocietyleveld_infobutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/alltvsocietyleveld_sharebutton"
+                            android:background="@drawable/btn_info"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <GridView
+                            android:id="@+id/alltvsocietyleveld_gridviewmenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:numColumns="3" >
+                        </GridView>
+
+                        <LinearLayout
+                            android:id="@+id/alltvsocietyleveld_info_land"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/alltvsocietyleveld_titlevideoinfo_land"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="7dp"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="28dp" />
+
+                                    <TextView
+                                        android:id="@+id/alltvsocietyleveld_textinfo_land"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="7dp"
+                                        android:text=""
+                                        android:textColor="@color/black"
+                                        android:textSize="23dp" />
+                                </LinearLayout>
+                            </ScrollView>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/alltvsocietyleveld_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" >
+
+                        <TextView
+                            android:id="@+id/alltvsocietyleveld_donebutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="7dp"
+                            android:text="Done"
+                            android:textColor="@color/orange"
+                            android:textSize="25dp" />
+                    </RelativeLayout>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/alltvsocietyleveld_titlevideoinfo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginTop="7dp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="28dp" />
+
+                            <TextView
+                                android:id="@+id/alltvsocietyleveld_textinfo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="7dp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="23dp" />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/alltvsocietyleveld_gridviewmenu_land"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.3"
+            android:numColumns="1"
+            android:visibility="gone" >
+        </GridView>
+    </LinearLayout>
+
+</LinearLayout>

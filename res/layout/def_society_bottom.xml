@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff" >
+
+	<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+	    >
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/black"
+	        />
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/white"
+	        android:orientation="horizontal" >
+	
+	        <Button
+	            android:id="@+id/socity_bt11"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/socity_bt1"
+	            android:singleLine="true"
+	            android:layout_weight="1" 
+	            android:textSize="23dp"
+	            android:background="@drawable/bg_button_base_white"
+	            android:textColor="@drawable/text_base_orage"
+	            />
+	
+	        <Button
+	            android:id="@+id/socity_bt22"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/socity_bt2"
+	            android:singleLine="true"
+	            android:layout_weight="1"
+	            android:textSize="23dp"
+	            android:background="@drawable/bg_button_base_white"
+	            android:textColor="@drawable/text_base_orage"
+	            />
+	
+	        <Button
+	            android:id="@+id/socity_bt33"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/socity_bt3"
+	            android:singleLine="true"
+	            android:layout_weight="1"
+	            android:textSize="23dp"
+	            android:background="@drawable/bg_button_base_white"
+	            android:textColor="@drawable/text_base_orage"
+	            />
+	    </LinearLayout>
+	</LinearLayout>
+
+</RelativeLayout>

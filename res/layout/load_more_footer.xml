@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/load_more_footer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <View
+        android:id="@+id/top_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/dark_slate_gray"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/load_more_progressBar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/load_more_lab_view"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/costum_progress_bar"
+        android:padding="3dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/load_more_lab_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="@string/pull_to_refresh_refreshing_label"/>
+
+</RelativeLayout>

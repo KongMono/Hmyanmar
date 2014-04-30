@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- color -->
+    <color name="txt_head">#fe8200</color>
+    <color name="gray_text">#565656</color>
+    <color name="red">#f00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_1">#F5F5F5</color>
+    <color name="no_yellow">#ebebeb</color>
+    <color name="yellow">#efb41c</color>
+    <color name="black">#000000</color>
+    <color name="gray_3">#EAEAEA</color>
+    <color name="gray_2">#AFAFAF</color>
+    <color name="gray_1">#C0C0C0</color>
+    <color name="gray_0">#77AFAFAF</color>
+    <color name="dark_slate_gray">#2F4F4F</color>
+    <color name="background_promotion">#FFE5E5E5</color>
+    <color name="txtLevelD">#999999</color>
+    <color name="orange">#ff6602</color>
+    <color name="action_bar_bg">#222</color>
+	<color name="transparent">#00000000</color>
+
+</resources>

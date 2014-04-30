@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">myTV</string>
+    <string name="ref_app_name">htv</string>
+    <string name="app_displayname">H Myanmar</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_version">4.0.3</string>
+    
+    <string name="app_id">71</string>
+    <string name="cache_name">htv</string>
+    <string name="database_name">htv_databases.db</string>
+    <string name="device">Android</string>
+    <string name="analytic">UA-47201987-1</string>
+    <string name="checkdata_app_id">201401160000001</string>
+    <string name="checkdata_app_secret">1f937120ae5ea30de1548044d02585a5</string>
+    
+    <!-- string name="api_getlist">http://api-movie.truelife.com/wrap_api/mod/tv/livetv?method=getlist&amp;format=json&amp;offset=0&amp;limit=100&amp;category=</string-->
+    <string name="api_getlist">http://mstage.truelife.com/api_movietv/tv/livetv?method=getlist&amp;format=json&amp;offset=0&amp;limit=100&amp;category=</string>
+    <string name="api_getinfo">http://mstage.truelife.com/api_movietv/tv/livetvinfo?method=getinfo&amp;format=json&amp;content_id=</string>
+    <!-- string name="api_getinfo">http://api-movie.truelife.com/wrap_api3/mod/tv/livetvinfo?method=getinfo&amp;format=json&amp;content_id=</string-->
+    <string name="api_gettoplist">http://mstage.truelife.com/api_movietv/stream/home?method=getlist&amp;format=json</string>
+    <string name="api_getmusic">http://mstage.truelife.com/api_movietv/drama/music?method=getinfo&amp;format=json&amp;content_id=</string>
+    <string name="api_getinfodrama">http://mstage.truelife.com/api_movietv/drama/synopsisinfo?method=getinfo&amp;format=json&amp;content_id=</string>
+    <string name="api_getdramanews">http://mstage.truelife.com/api_movietv/drama/news?method=getlist&amp;format=json&amp;content_id=</string>
+    <string name="api_getdramanews_leveld"> http://mstage.truelife.com/api_movietv/drama/newsinfo?method=getinfo&amp;format=json&amp;content_id=%s&amp;parent_id=</string>
+    <string name="api_getdramaquote">http://mstage.truelife.com/api_movietv/drama/quote?method=getlist&amp;format=json&amp;content_id=</string>
+    <string name="api_getdramaquote_leveld"> http://mstage.truelife.com/api_movietv/drama/quoteinfo?method=getinfo&amp;format=json&amp;content_id=%s&amp;parent_id=</string>
+    <string name="api_getdramaarchive">http://mstage.truelife.com/api_movietv/drama/archive?method=getinfo&amp;format=json&amp;content_id=%s&amp;parent_id=</string>
+    <string name="api_getdramagallery">http://mstage.truelife.com/api_movietv/drama/gallery?method=getalbum&amp;format=json&amp;content_id=%s&amp;album_id=</string>
+    
+    <string name="category1">ช่องโปรด</string>
+    <string name="category2">ช่องทั้งหมด</string>
+    
+    <string name="categorytitle">ช่องโปรด (%s/20)</string>
+    
+    <string name="tab1">ดูทีวี</string>
+    <string name="tab2">H TV Society</string>
+    <string name="tab3">HClusive</string>
+
+    <string-array name="tabArray">
+        <item>@string/tab1</item>
+        <item>@string/tab2</item>
+        <item>@string/tab3</item>
+    </string-array>
+
+    <!-- loadMore -->
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+    <string name="default_fragment">Default</string>
+    <string name="animation_fragment">Animation</string>
+    <string name="footer">The Footer</string>
+    <string name="footer_fragment">Footer</string>
+
+    <!-- ScoreTab -->
+    <string-array name="tabScoreArray">
+        <item>@string/tabScore1</item>
+        <item>@string/tabScore2</item>
+        <item>@string/tabScore3</item>
+        <item>@string/tabScore4</item>
+        <item>@string/tabScore5</item>
+    </string-array>
+
+    <string name="tabScore1">พรีเมียร์ลีก</string>
+    <string name="tabScore2">ไทยพรีเมียร์ลีก</string>
+    <string name="tabScore3">บุนเดสลีก้า</string>
+    <string name="tabScore4">ลาลีก้า</string>
+    <string name="tabScore5">กัลโช่</string>
+    <string name="btnScoretab1">ผลการแข่งขัน</string>
+    <string name="btnScoretab2">ตารางคะแนน</string>
+    <string name="call_support_android">1331</string>
+    <string name="email_support">admin@truelife.com</string>
+    <string name="fobject_login_config">login.dat</string>
+    <string name="button_call_support">Call Support</string>
+    
+    <string name="stat">HSerie_Htv%s_App_Android_Free_</string>
+    
+    <string name="codeHeader1"><![CDATA[<h><center><b><font size="5">]]></string>
+    <string name="codeHeader2"><![CDATA[</font><b><center><h>]]></string>
+    
+    <string name="cat_string">Category</string>
+    
+     <string-array name="CatDialogArray">
+        <item>@string/cat_Dialog1</item>
+        <item>@string/cat_Dialog2</item>
+        <item>@string/cat_Dialog3</item>
+    </string-array>
+    
+    <string name="cat_Dialog1">null</string>
+    <string name="cat_Dialog2">null</string>
+    <string name="cat_Dialog3">null</string>
+    
+    <!-- Close Dialog -->
+    <string name="exit_alert">Do you want to exit?</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    
+    <string name="truemove_alert">บริการนี้สำหรับลูกค้า TrueMove H เท่านั้น</string>
+    
+    <string name="cache_timeout">3600000</string>
+    <!-- numberic pageindicator -->
+    <string name="custom_npi_text_template">#i/#N"</string>
+    <string name="custom_npi_text_template_2">#i of #N"</string>
+    <string name="custom_npi_previous_button_text">"&lt;"Prev</string>
+    <string name="custom_npi_next_button_text">Next"&gt;"</string>
+    <string name="custom_npi_start_button_text">"&lt;""&lt;"First</string>
+    <string name="custom_npi_end_button_text">Last"&gt;""&gt;"</string>
+    <string name="custom_npi_previous_button_text_2">More</string>
+    <string name="custom_npi_next_button_text_2">Less</string>
+    <string name="custom_npi_start_button_text_2">1st</string>
+    <string name="custom_npi_end_button_text_2">Nth</string>
+    
+    <string name="addfavorite_alert_add">Add Favorite</string>
+    <string name="addfavorite_alert_addth">คุณต้องการเพิ่มช่องนี้ในรายการโปรด</string>
+    <string name="addfavorite_alert_added">คุณมีรายการโปรด ช่องนี้แล้วค่ะ</string>
+    <string name="addfavorite_alert_delete">คุณต้องการลบรายการโปรด ช่องนี้?</string>
+    <string name="addfavorite_alert_more">คุณสามารถเลือกช่องรายการโปรดได้สูงสุด 20 ช่องค่ะ</string>
+    <string name="edit">Edit</string>
+    <string name="done">Done</string>
+    
+    <string name="addfavoriteheader">เพิ่มช่องโปรด</string>
+    <string name="addfavoritetitle">คุณสามารถเพิ่มช่องรายการโปรดได้ 20 ช่อง</string>
+    
+    <!-- tv socity text -->
+    <string name="socity_bt0">รายการวันนี้</string>
+    <string name="socity_bt1">ข่าวบันเทิง</string>
+    <string name="socity_bt2">รายการทั้งหมด</string>
+    <string name="socity_bt3">ชอตเด็ดดารา</string>
+    
+    <string-array name= "tvsocityleveldmenu">
+        <item>@string/tvsocityleveldmenu1</item>
+        <item>@string/tvsocityleveldmenu2</item>
+        <item>@string/tvsocityleveldmenu3</item>
+        <item>@string/tvsocityleveldmenu4</item>
+        <item>@string/tvsocityleveldmenu5</item>
+        <item>@string/tvsocityleveldmenu6</item>
+    </string-array>
+    
+    <string name="tvsocityleveldmenu1">เรื่องย่อละคร</string>
+    <string name="tvsocityleveldmenu2">อัลบั้มภาพ</string>
+    <string name="tvsocityleveldmenu3">ชมย้อนหลัง</string>
+    <string name="tvsocityleveldmenu4">เกร็ดละคร</string>
+    <string name="tvsocityleveldmenu5">เพลงละคร</string>
+    <string name="tvsocityleveldmenu6">ข่าวละคร</string>
+    
+    <string name="copytext">คักลอกลงคลิปบอร์ด</string>
+    
+    <string name="alerttextandexit">ขออภัยค่ะ ขณะนี้ยังไม่มีข้อมูล</string>
+    <string name="alerttextcannotplay">ขออภัยค่ะ ไม่สามารถเล่นวีดีโอนี้ได้</string>
+    
+    <string name="istablet">false</string>
+    
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    
+</resources>
